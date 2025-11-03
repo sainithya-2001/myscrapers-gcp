@@ -3,6 +3,8 @@ name: Deploy Scraper (CF Gen2)
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'scraper/functions/**'
 
 jobs:
   deploy:
